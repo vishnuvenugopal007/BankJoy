@@ -20,7 +20,7 @@ body {
     margin: 0px;
     top: 0px;
     left: 0px;
-    opacity: .85;
+    opacity: .93;
     position: absolute;
   }
 
@@ -101,3 +101,53 @@ body {
     text-align: center;
     font-size: .9em;
   }
+
+  .demo {
+    width: 100%;
+  }
+
+  #demo-button {
+    width: 150px;
+    background-color: #5373DA;
+    border-radius: 50px;
+    padding: 15px 30px 15px 30px;
+    margin: 50px auto;
+    text-align: center;
+    font-weight: 200;
+    font-size: 1.1em;
+    -webkit-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0,0,0,0);
+  }
+
+  #demo-button:hover {
+    -webkit-animation-name: pulse;
+    animation-name: pulse;
+    -webkit-animation-duration: .25s;
+    animation-duration: .25;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    color: #FFFFFF;
+  }
+
+  @-webkit-keyframes pulse{
+    25%{
+      -webkit-transform: scale(1.1);
+      transform: scale(1.1);
+    }
+  }
+
+  @keyframes pulse {
+    25%{
+      -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+      transform: scale(1.1);
+    }
+  }
+
+#demo-link {
+  text-decoration: none;
+  color: #FFFFFF;
+  margin: 0px auto 0px auto;
+}
