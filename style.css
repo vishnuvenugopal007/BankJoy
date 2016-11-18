@@ -131,14 +131,14 @@ body {
     color: #FFFFFF;
   }
 
-  @-webkit-keyframes pulse{
+  webkit-keyframes pulse{
     25%{
       -webkit-transform: scale(1.1);
       transform: scale(1.1);
     }
   }
 
-  @keyframes pulse {
+  keyframes pulse {
     25%{
       -webkit-transform: scale(1.1);
       -ms-transform: scale(1.1);
